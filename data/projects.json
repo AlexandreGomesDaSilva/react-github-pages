@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "titre": "Booki",
+    "description": "Landing page d'un site de réservation d'hôtels. Le but était de créer une page d'accueil responsive de l'agence Booki en utilisant HTML et CSS",
+    "image": "/images/booki.png",
+    "skills": ["HTML", "CSS", "Responsive"]
+  },
+  {
+    "id": 2,
+    "titre": "Sophie Bluel",
+    "description": "Un projet style `portfolio` pour une photographe avec une galerie d'images. Le but était d'apprendre à manipuler le DOM avec JavaScript et à créer une interface utilisateur dynamique à l'aide d'appels API afin de récupérer des données.",
+    "image": "/images/sophie-bluel.png",
+    "skills": ["JavaScript", "HTML", "CSS", "API", "DOM"]
+  },
+  {
+    "id": 3,
+    "titre": "Kasa",
+    "description": "Un site spécialisé dans la location d’appartements entre particuliers en France. Le but de ce projet était d'implémenter le front-end d’une application en utilisant React et React Router pour créer une expérience utilisateur moderne et réactive.",
+    "image": "/images/kasa.png",
+    "skills": ["React", "SCSS", "API"]
+  },
+  {
+    "id": 4,
+    "titre": "Mon Vieux Grimoire",
+    "description": "Une petite chaîne de librairies souhaitait ouvrir un site de référencement et de notation de livres : Mon Vieux Grimoire. Le but était de créer une API RESTful pour gérer les livres et les utilisateurs.",
+    "image": "/images/mon-vieux-grimoire.png",
+    "skills": ["Backend", "Node.js", "Express", "MongoDB", "API RESTful"]
+  },
+  {
+    "id": 5,
+    "titre": "Nina Carducci",
+    "description": "Un projet de débbugage sur le portfolio d'une designer. Le but était d'optimiser le site avec l'appui d'une audit Lighthouse. L'audit calcule 4 scores : la performance, l'accessibilité, les bonnes pratiques et le SEO. Le but était de maximiser ces scores.",
+    "image": "/images/nina-carducci.png",
+    "skills": [
+      "HTML",
+      "CSS",
+      "Débbugage",
+      "Accessibilité",
+      "SEO",
+      "Bonnes pratiques"
+    ]
+  }
+]
