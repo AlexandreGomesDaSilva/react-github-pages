@@ -7,7 +7,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
 const basename =
-  process.env.NODE_ENV === "production" ? "/react-github-pages" : "";
+  process.env.NODE_ENV === "production" ? "/react-github-pages" : "/";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>

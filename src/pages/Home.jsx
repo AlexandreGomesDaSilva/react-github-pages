@@ -19,6 +19,13 @@ const Home = () => {
 
   return (
     <div className="home">
+      <div className="home-header">
+        <h1 className="home-header-title">
+          <strong>Salut !</strong>
+          <em>Je m'appelle Alexandre.</em>
+          <span>Je suis développeur web et mobile.</span>
+        </h1>
+      </div>
       <h2>Réalisations</h2>
       <div className="projects-list">
         {projects.map((project) => (
