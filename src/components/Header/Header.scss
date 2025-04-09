@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.5rem 0;
+  border-bottom: 1.6px solid #eaeaea;
+
+  .header__title {
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  nav {
+    ul {
+      display: flex;
+      list-style: none;
+      gap: 3rem;
+      li {
+        .header__email-button {
+          border: 1px solid #3b3b38;
+          padding: 12px 27px;
+          border-radius: 50px;
+          text-decoration: none;
+          font-size: 16px;
+          transition: background-color 0.3s ease;
+
+          &:hover {
+            background-color: #3b3b38;
+            color: #fff;
+          }
+        }
+        a {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

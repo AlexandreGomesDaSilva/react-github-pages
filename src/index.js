@@ -1,15 +1,20 @@
 // @ts-nocheck
 import React from "react";
-import ReactDOM from "react-dom/client";
-import "./index.css";
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+const basename =
+  process.env.NODE_ENV === "production" ? "/react-github-pages" : "";
+
+createRoot(document.getElementById("root")).render(
+  <StrictMode>
+    <BrowserRouter basename={basename}>
+      <App />
+    </BrowserRouter>
+  </StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
