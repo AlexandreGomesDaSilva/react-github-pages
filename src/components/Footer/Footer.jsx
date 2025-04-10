@@ -1,16 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Footer.scss";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMobile(!isMobile);
+  };
+
   return (
     <footer className="footer">
       <h1 className="footer__title">
         <Link to="/">Gomes Da Silva Alexandre</Link>
       </h1>
-      <nav>
+      <button className="menu-button" onClick={toggleMenu}>
+        <span className="menu-icon"></span>
+      </button>
+      <nav className={`menu ${isMobile ? "menu--open" : ""}`}>
         <ul>
           <li>
             <Link to="/about">À propos</Link>

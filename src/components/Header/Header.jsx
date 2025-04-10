@@ -1,16 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Header.scss";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 
 const Header = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMobile(!isMobile);
+  };
+
   return (
     <header className="header">
       <h1 className="header__title">
         <Link to="/">Gomes Da Silva Alexandre</Link>
       </h1>
-      <nav>
+      <button className="menu-button" onClick={toggleMenu}>
+        <span className="menu-icon"></span>
+      </button>
+      <nav className={`menu ${isMobile ? "menu--open" : ""}`}>
         <ul>
           <li>
             <Link to="/about">À propos</Link>
