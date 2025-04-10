@@ -1,5 +1,6 @@
 import React from "react";
 import "./Project.scss";
+import { Link } from "react-router-dom";
 
 const Project = ({ project }) => {
   return (
@@ -19,6 +20,13 @@ const Project = ({ project }) => {
             <span key={index}>{skills}</span>
           ))}
         </div>
+        <Link
+          to={`${project.repository}`}
+          className="project-link"
+          target="_blank"
+        >
+          Lien vers le projet
+        </Link>
       </div>
     </div>
   );
